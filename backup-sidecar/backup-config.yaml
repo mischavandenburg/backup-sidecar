@@ -1,0 +1,5 @@
+backups:
+  - path: /tmp/test
+    prefix: test
+  - path: /workspaces/backup-sidecar/backup-sidecar
+    prefix: python

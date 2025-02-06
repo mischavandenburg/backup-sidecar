@@ -1,0 +1,11 @@
+[project]
+name = "backup-sidecar"
+version = "0.1.0"
+description = "Python program to run backups to Azure as a sidecar container"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "azure-mgmt-storage>=22.0.0",
+    "azure-storage-blob>=12.24.1",
+    "pyyaml>=6.0.2",
+]

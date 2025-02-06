@@ -1,0 +1,5 @@
+backups:
+  - path: /data/dir1
+    prefix: app1
+  - path: /data/dir2
+    prefix: app2
