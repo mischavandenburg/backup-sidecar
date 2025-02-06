@@ -28,10 +28,14 @@ isodate==0.7.2
     #   azure-storage-blob
 pycparser==2.22
     # via cffi
+pytz==2025.1
+    # via backup-sidecar (pyproject.toml)
 pyyaml==6.0.2
     # via backup-sidecar (pyproject.toml)
 requests==2.32.3
     # via azure-core
+schedule==1.2.2
+    # via backup-sidecar (pyproject.toml)
 six==1.17.0
     # via azure-core
 typing-extensions==4.12.2
