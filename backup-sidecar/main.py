@@ -9,6 +9,10 @@ from azure.storage.blob import BlobServiceClient
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+logging.getLogger("azure.core.pipeline.policies.http_logging_policy").setLevel(
+    logging.WARNING
+)
+
 
 def backup_to_blob():
     with open(os.getenv("CONFIG_PATH", "/backup/backup-config.yaml")) as f:
