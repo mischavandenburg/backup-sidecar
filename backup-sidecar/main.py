@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 
 def backup_to_blob():
-    with open(os.getenv("CONFIG_PATH", "/config/backup-config.yaml")) as f:
+    with open(os.getenv("CONFIG_PATH", "/backup/backup-config.yaml")) as f:
         config = yaml.safe_load(f)
 
     storage_account = os.getenv("STORAGE_ACCOUNT_NAME")
